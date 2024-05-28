@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>Stasi Speech Machine</title>
+    <script src="C:\Users\tully_08\Desktop\Code\MilSim-Panel\sprach-master\sprach-master\buffer-loader.js"></script>
+    <script src="C:\Users\tully_08\Desktop\Code\MilSim-Panel\sprach-master\sprach-master\sprach.js"></script>
+    <link rel="stylesheet" href="css/pure-min.css">
+    <style scoped>
+        .button-xlarge {
+            font-size: 125%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/main-grid.css">
+
+
+
+
+
+    <link rel="stylesheet" href="css/layouts/blog.css">
+
+
+</head>
+
+<body>
+
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-med-1-4">
+            <div class="header">
+                <hgroup>
+                    <h1 class="brand-title">sprach machine</h1>
+                    <h2 class="brand-tagline">LANG_HERE version.</h2>
+                </hgroup>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" href="javascript:playSound(7,0)">7</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="javascript:playSound(8,0)">8</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="javascript:playSound(9,0)">9</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" href="javascript:playSound(4,0)">4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="javascript:playSound(5,0)">5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="javascript:playSound(6,0)">6</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" href="javascript:playSound(1,0)">1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="javascript:playSound(2,0)">2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="javascript:playSound(3,0)">3</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" href="javascript:playSound(0,0)">0</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" href="javascript:playSound(10,0)">Achtung (*)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="javascript:playSound(11,0)">Trennung (/)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="javascript:playSound(12,0)">Ende (+)</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>keyboard:</p>
+                <input id="keyboard">
+            </div>
+        </div>
+
+        <div class="content pure-u-1 pure-u-med-3-4">
+            <div>
+                <div class="posts">
+                    <h1 class="content-subhead">Program</h1>
+                    <h2><b>BUG:</b> Reload after every use.</h2>
+                    <form class="pure-form pure-form-stacked">
+                        <fieldset>
+
+                            <label for="call">Call</label>
+                            <input id="call" type="text" onclick="this.value=''" value="271">
+
+                            <label for="body">Message</label>
+                            <textarea rows="6" cols="80" name="body" id="body" onclick="this.value=''">846 846 20 20 83167 83167 14528 14528 30778 30778 13436 13436 50234 50234 67256 67256 15654 15654 27414 27414 15837 15837 75251 75251 51820 51820 37982 37982 64162 64162 18385 18385 90381 90381 77942 77942 12692 12692 22897 22897 69231 69231 14881 14881 846 846 20 20 00000</textarea>
+                            <button type="submit" class="button-xlarge pure-button pure-button-primary">Play the message</button>
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
